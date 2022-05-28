@@ -3,13 +3,14 @@ int LEFT1 = D2;
 int LEFT2 = D3;
 int RIGHT1 = D4;
 int RIGHT2 = D5;
+String array[3]={"x: ", "y: ", "z: "};
 String received;
 String mData;
 int xAxis, yAxis, zAxis;
 int delimitor[4];
 void setup() {
  pinMode(UPDOWN, OUTPUT);
- pinMode(DOWN, OUTPUT);
+// pinMode(DOWN, OUTPUT);
  pinMode(LEFT1, OUTPUT);
  pinMode(RIGHT1, OUTPUT);
  pinMode(LEFT2, OUTPUT);
@@ -18,6 +19,7 @@ void setup() {
 }
 
 void loop() {
+
  if (Serial.available())  /* If data is available on serial port */
     {
       
