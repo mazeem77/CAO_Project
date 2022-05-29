@@ -69,4 +69,21 @@ void loop() {
         digitalWrite(RIGHT2,LOW);
         digitalWrite(UPDOWN,LOW);      // IN1
       }
+
+      else if(xAxis > 2){
+        digitalWrite(LEFT1,LOW);
+        digitalWrite(LEFT2,LOW);
+        digitalWrite(RIGHT1,HIGH);
+        digitalWrite(RIGHT2,HIGH);
+        digitalWrite(UPDOWN,LOW);      // IN1
+      }
+      else if(xAxis < -2){
+        digitalWrite(LEFT1,HIGH);
+        digitalWrite(LEFT2,HIGH);
+        digitalWrite(RIGHT1,LOW);
+        digitalWrite(RIGHT2,LOW);
+        digitalWrite(UPDOWN,LOW);      // IN1
+      }
+//// ***********************************************************
+    }
 }
