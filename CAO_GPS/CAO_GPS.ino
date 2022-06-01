@@ -5,6 +5,11 @@ TinyGPSPlus gps;  // The TinyGPS++ object
 SoftwareSerial ss(4, 5); // The serial connection to the GPS device
 const char* ssid = "Ali"; //ssid of your wifi
 const char* password = "554151955"; //password of your wifi
+float latitude , longitude;
+int year , month , date, hour , minute , second;
+String date_str , time_str , lat_str , lng_str;
+int pm;
+WiFiServer server(80);
 
 void setup()
 {
